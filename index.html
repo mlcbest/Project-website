@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="eng-ca">
+  
 
   <head>
    <title>Matthew's autobiographical website</title>
@@ -41,20 +42,44 @@
     
     img {
       float: left;
-      width: 60%;
-      height: 400px;
+      height: 500px;
       margin-left: 0px;
       margin-right: 0px;
     }
     
     div {
       background-color: black;
-      width: 20%;
+      height: 400px;
       padding: 50px;
       margin: 50px;
       margin-top: 0px;
     	float: right;
       color: white;
+    }
+    
+     @media only screen and (min-width: 605px){
+      
+       img {
+          width: 60%; 
+       }  
+       
+       div {
+          width: 20%;
+         	margin: 50px;
+      		margin-top: 0px;
+       }
+       
+    }
+    
+    @media only screen and (max-width: 604px){
+      img {
+         width: 100%; 
+       }  
+       
+       div {
+        width: 3/4em;
+        margin: 50px;
+       }
     }
     
   </style>
