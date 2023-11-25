@@ -47,8 +47,16 @@
    	 background: red;
     }
     
-    img {
+    .imgleft {
       float: left;
+      object-fit: cover;
+      height: 500px;
+      margin-left: 0px;
+      margin-right: 0px;
+    }
+    
+      .imgright {
+      float: right;
       object-fit: cover;
       height: 500px;
       margin-left: 0px;
@@ -77,9 +85,15 @@
       font-family: Georgia, serif
     }
     
+    
+    
      @media only screen and (min-width: 605px){
       
-       img {
+       .imgleft {
+          width: 60%; 
+       }  
+       
+       .imgright {
           width: 60%; 
        }  
        
@@ -97,10 +111,15 @@
          font-size: 14px
        }
        
+       
     }
     
     @media only screen and (max-width: 604px){
-      img {
+      .imgleft {
+         width: 100%; 
+       }  
+      
+      .imgright {
          width: 100%; 
        }  
        
@@ -125,7 +144,7 @@
     Welcome! Allow me to introduce myself!
   </h1>
     
-  <img src="Hiking pic.png" alt="Profile photo">
+  <img class="imgleft" src="Hiking pic.png" alt="Profile photo">
     
   <div class="right">
     <h2>
@@ -148,9 +167,14 @@
   
   <div class="left">
     <h2>
-      A Brief Introduction:
+      My goals:
     </h2>
-    Hello! My name is Matthew Best.....I know what you are thinking,  “man that is an interesting last name”. Well, just like my name, there is a lot to my life that makes it interesting. As a Canadian who grew up half way accross the world for 19 years, I travelled all the way from Hong Kong to the University of Waterloo to persue a degree in GBDA. This stemmed from my initial interest in my design technology class in my high school years.
+Before arriving in GBDA, I was never fully sure of what I wanted to do later in life. That is still true today. I just know that I want to find an occupation where I will be able to freely express my creative thinking, that makes me happy, and that can still afford me decent wages.
+
+(The image shown is a massage vest product I made for my design tech class)
     </div>
+  
+    <img class="imgright" src="HK.jpg" alt="Hong Kong">
+  <img class="imgleft" src="Massage vest.heic" alt="Massage vest">
   
 </html>
