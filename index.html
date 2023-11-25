@@ -9,6 +9,12 @@
   
   <style>
   
+
+			hr.border {
+ 			 border-top: 8px solid #bbb;
+  		border-radius: 5px;
+			} 
+    
     ul {
     	list-style-type: none;
   		margin: 0;
@@ -49,7 +55,7 @@
       margin-right: 0px;
     }
     
-    div {
+    .right {
       background-color: black;
       height: 400px;
       padding: 50px;
@@ -60,13 +66,31 @@
       font-family: Georgia, serif
     }
     
+    .left {
+      background-color: black;
+      height: 400px;
+      padding: 50px;
+      margin: 50px;
+      margin-top: 0px;
+    	float: left;
+      color: white;
+      font-family: Georgia, serif
+    }
+    
      @media only screen and (min-width: 605px){
       
        img {
           width: 60%; 
        }  
        
-       div {
+       .right {
+          width: 20%;
+         	margin: 25px;
+      		margin-top: 0px;
+         font-size: 14px
+       }
+       
+       .left {
           width: 20%;
          	margin: 25px;
       		margin-top: 0px;
@@ -80,7 +104,12 @@
          width: 100%; 
        }  
        
-       div {
+       .right {
+        width: 3/4em;
+        margin: 50px;
+       }
+      
+       .left {
         width: 3/4em;
         margin: 50px;
        }
@@ -98,7 +127,7 @@
     
   <img src="Hiking pic.png" alt="Profile photo">
     
-  <div>
+  <div class="right">
     <h2>
       A Brief Introduction:
     </h2>
@@ -112,6 +141,16 @@
      <li><a href="">Welcome</a></li>
     </ul>
   
+  <p>End of section</p>
+<hr class="border">  
+    
  </body>
+  
+  <div class="left">
+    <h2>
+      A Brief Introduction:
+    </h2>
+    Hello! My name is Matthew Best.....I know what you are thinking,  “man that is an interesting last name”. Well, just like my name, there is a lot to my life that makes it interesting. As a Canadian who grew up half way accross the world for 19 years, I travelled all the way from Hong Kong to the University of Waterloo to persue a degree in GBDA. This stemmed from my initial interest in my design technology class in my high school years.
+    </div>
   
 </html>
