@@ -18,6 +18,7 @@
 			hr.border {
  			 border-top: 8px solid #bbb;
   		border-radius: 3px;
+      border-width: 100%;
 			} 
     
  	/*
@@ -100,17 +101,28 @@ li a:hover {
       float: left;
       object-fit: cover;
       height: 500px;
-      margin-left: 0px;
-      margin-right: 0px;
     }
+    
+     /*Small left image specifications*/
+    .Simgleft {
+      float: left;
+      object-fit: cover;
+      height: 250px;
+    }
+    
    
       /*Right image specifications*/
       .imgright {
       float: right;
       object-fit: cover;
       height: 500px;
-      margin-left: 0px;
-      margin-right: 0px;
+    }
+  
+     /*Small right image specifications*/
+    .Simgright {
+      float: right;
+      object-fit: cover;
+      height: 250px;
     }
     
      /*Right text box div specifications*/
@@ -126,6 +138,18 @@ li a:hover {
       overflow: scroll;
     }
     
+      /*Half page right text box div specifications*/
+    .BigRight {
+      background-color: black;
+      height: 400px;
+      padding: 50px;
+      margin: 50px;
+      margin-top: 0px;
+    	float: right;
+      color: white;
+      font-family: Georgia, serif;
+      overflow: scroll;
+    }
     
      /*Left text box div specifications*/
     .left {
@@ -139,7 +163,21 @@ li a:hover {
       font-family: Georgia, serif;
       overflow: scroll;
     }
-   
+    
+     /*Half page left text box div specifications*/
+    .BigLeft {
+      background-color: black;
+      height: 400px;
+      padding: 50px;
+      margin: 50px;
+      margin-top: 0px;
+    	float: left;
+      color: white;
+      font-family: Georgia, serif;
+      overflow: scroll;
+    }
+    
+    
     /*
     Code copied from: https://www.w3schools.com/css/tryit.asp?filename=trycss_dropdown_button
     Author: w3schools.com
@@ -187,24 +225,45 @@ li a:hover {
           width: 60%; 
        }  
        
+         .Simgleft {
+    	width: 43%;
+      height: 300px;
+    	margin-left: 50px;
+   		 }
+       
        .imgright {
           width: 60%; 
        }  
        
+        .Simgright {
+    	width: 43%;
+      height: 300px;
+    	margin-left: 50px;
+   		 }
+       
        .right {
           width: 20%;
-         	margin: 25px;
-      		margin-top: 0px;
+         	margin-right: 25px;
+         font-size: 14px;
+       }
+       
+       .BigRight {
+         width: 30%;
+         margin-right: 25px;
          font-size: 14px;
        }
        
        .left {
           width: 20%;
-         	margin: 25px;
-      		margin-top: 0px;
+         	margin-left: 25px;
          font-size: 14px;
        }
        
+       .BigLeft {
+         width: 30%;
+         margin-right: 25px;
+         font-size: 14px;
+       }
        
        #section2{
          height: 450px;
@@ -219,6 +278,16 @@ li a:hover {
          width: 100%; 
        }  
       
+      .Simgleft {
+        height: 500px;
+        width: 100%;  
+      }
+      
+      .Simgright {
+        height: 500px;
+        width: 100%;  
+      }
+      
       .imgright {
          width: 100%; 
        }  
@@ -228,11 +297,21 @@ li a:hover {
         margin: 50px;
        }
       
+      .BigRight {
+        width: 3/4em;
+        margin: 50px; 
+      }
+      
        .left {
         width: 3/4em;
         margin: 50px;
        }
     
+      .BigLeft {
+        width: 3/4em;
+        margin: 50px; 
+      }
+      
     }
     
   </style>
@@ -323,7 +402,7 @@ Before arriving in GBDA, I was never fully sure of what I wanted to do later in 
     
     <!-- Hiking text box div element --> 
     
-    <div class="right">
+    <div class="BigRight">
        <h2>
       Hiking
     </h2>
@@ -335,7 +414,7 @@ Before arriving in GBDA, I was never fully sure of what I wanted to do later in 
     
     <!-- Gaming text box div element -->
     
-    <div class="left">
+    <div class="BigLeft">
        <h2>
       Gaming
     </h2>
@@ -348,6 +427,9 @@ Before arriving in GBDA, I was never fully sure of what I wanted to do later in 
      <!-- Button that opens Brawl Stars gameplay Youtube video in new tab -->
      <button class="btn"><a href="https://www.youtube.com/watch?v=dZFmW809r-I&ab_channel=MatthewBest" target="_blank">View Gameplay<a/></button>
     </div>
+      
+     <img class="Simgleft" src="BrawlStars.PNG" alt="Brawl Stars">   
+         
       
 	</body>
 </html>
